@@ -1,1 +1,285 @@
-Hi hi
+
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Maria D. Chang | Computer Science | Artificial Intelligence</title>
+<meta name="description" content="Maria D. Chang: graduate student in Computer Science (Artificial Intelligence) at Northwestern University.">
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<!-- 
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+ !-->
+
+<!--[if lt IE 9]>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+    <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+<!--<![endif]-->
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41717606-1', 'northwestern.edu');
+  ga('send', 'pageview');
+
+</script>
+
+<script> 
+
+$(document).ready(function(){
+    $(".body-container").hide();
+		
+   
+	function shrinkTiles() {
+		//alert("hello world");
+		$(".body-container").hide();
+		$(".tile-body-text").hide();
+		$(".tile-header").animate({fontSize:"30pt"});
+		//$(".tile-body-text").animate({fontSize:"8pt"});
+		$("#tile-1").animate({left:'0px', top:'300px', height:'25px'});
+		$("#tile-2").animate({left:'0px', top:'345px', height:'25px'});
+		$("#tile-3").animate({left:'0px', top:'390px', height:'25px'});
+		$("#tile-4").animate({left:'0px', top:'435px', height:'25px'});
+		$("#tile-5").animate({left:'0px', top:'480px', height:'25px'});
+		$("#tile-6").animate({left:'0px', top:'525px', height:'25px'});
+		$("#tile-7").animate({left:'0px', top:'570px', height:'25px'});
+		$("html, body").animate({scrollTop:0}, "fast");
+		}
+	
+	$("#tile-0").click(function(){
+		ga('send', 'event', 'tile', 'click', 'my picture');
+		$(".body-container").hide();
+		$(".tile-body-text").show();
+		$(".tile-header").animate({fontSize:"34pt"});
+		$("#tile-1").animate({left:'0px', top:'300px', height:'130px'});
+		$("#tile-2").animate({left:'300px', top:'0px', height:'130px'});
+		$("#tile-3").animate({left:'300px', top:'150px', height:'130px'});
+		$("#tile-4").animate({left:'300px', top:'300px', height:'130px'});
+		$("#tile-5").animate({left:'600px', top:'0px', height:'130px'});
+		$("#tile-6").animate({left:'600px', top:'150px', height:'130px'});
+		$("#tile-7").animate({left:'600px', top:'300px', height:'130px'});
+		$("html, body").animate({scrollTop:0}, "fast");
+	});
+    
+	$("#tile-1").click(function(){
+		ga('send', 'event', 'tile', 'click', 'about me');
+		shrinkTiles();
+		$("#about-me").slideToggle("slow");
+    });
+    
+
+	$("#tile-2").click(function(){
+		ga('send', 'event', 'tile', 'click', 'research');
+		shrinkTiles();
+		$("#research").slideToggle("slow");
+    });
+    
+	$("#tile-3").click(function(){
+		ga('send', 'event', 'tile', 'click', 'papers');
+		shrinkTiles();
+		$("#papers").slideToggle("slow");
+    });
+ 
+	$("#tile-4").click(function(){
+		ga('send', 'event', 'tile', 'click', 'CV');
+		//$("#cv").slideToggle("slow");
+    });
+ 
+	$("#tile-5").click(function(){
+		ga('send', 'event', 'tile', 'click', 'links');
+		// $("#links").slideToggle("slow");
+    });
+ 
+	$("#tile-6").click(function(){
+		ga('send', 'event', 'tile', 'click', 'updates');
+		shrinkTiles();
+		$("#updates-blocked").slideToggle("slow");
+		$("#updates").slideToggle("slow");
+    });
+ 
+	$("#tile-7").click(function(){
+		ga('send', 'event', 'tile', 'click', 'connect');
+		shrinkTiles();
+		$("#connect").slideToggle("slow");
+    });
+	
+	/*
+	$("#cv-link").click(function(){
+		ga('send', 'event', 'cv', 'download', 'cv-download');
+	});
+	*/
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="main">
+    <div class="tiles">
+        <div class="photo-tile" id="tile-0"><img id="my-picture" src="maria d chang.jpg" caption="Guatemala"></div>
+        <div class="content-tiles" id="tile-1">
+            <div class="tile-header">About Me</div>
+            <div class="tile-body-text">Ph.D. candidate in Computer Science at Northwestern University</div>
+        </div>
+        <div class="content-tiles" id="tile-2">
+            <div class="tile-header">Research</div>
+            <div class="tile-body-text">Artificial Intelligence, Cognitive Science, Learning Sciences</div>
+        </div>
+        <div class="content-tiles" id="tile-3">
+            <div class="tile-header">Papers</div>
+            <div class="tile-body-text">Papers and talks</div>
+        </div>
+		
+		<a id="tile-link" href="MariaChang_CV_2015-10-01.pdf" target="_blank">
+        <div class="content-tiles" id="tile-4">
+            <div class="tile-header">CV</div>
+            <div class="tile-body-text"> pdf</div>
+        </div>
+		</a>
+		
+		<a id="tile-link" href="http://www.qrg.northwestern.edu" target="_blank">
+        <div class="content-tiles" id="tile-5">
+			<div class="tile-header">QRG</div>
+			<div class="tile-body-text">Qualitative Reasoning Group, Northwestern University</div>
+		</div>
+		</a>
+        
+		<div class="content-tiles" id="tile-6">
+			<div class="tile-header">Updates</div>
+		</div>
+        <div class="content-tiles" id="tile-7">
+			<div class="tile-header">Connect</div>
+		</div>
+
+    <!-- about me !-->
+    <div class="body-container" id="about-me">
+        <div class="body-header">Hi, my name is Maria.</div>
+        <div class="body-text">
+        <p>I study artificial intelligence at <a href="http://www.eecs.northwestern.edu" target="_blank">Northwestern University</a> and I'm a member of the <a href="http://www.qrg.northwestern.edu" target="_blank">Qualitative Reasoning Group</a>.  
+		Before grad school, I studied Cognitive Science at UC Berkeley and worked in Cognitive Neuroscience labs in the SF Bay Area and at Children's Hospital Boston.  I'm interested in basic AI research as well as useful applications of AI.  I think that intelligent software can have a huge impact on the accessibility of quality education.  
+        <p>I'm married and have two dogs.
+        <p>I like bicycling, swimming and, to a lesser extent, running.  I love making cocktails and I sometimes
+			take on small art projects, like <a href="grid.jpg" target="_blank">this</a>.
+        </div>
+    </div>
+
+    <!-- research !-->
+    <div class="body-container" id="research">
+        <div class="body-header">Research Interests</div>
+        <div class="body-text">
+        <p>My recent research activities have focused on applied artificial intelligence.  In broad terms, I'm interested in:
+        <ul><li>Intelligent systems
+	    <li>Knowledge representation and reasoning, especially qualitative reasoning, analogical reasoning and spatial reasoning
+            <li>The role of AI in education
+            <li>The role of AI in human computer interaction
+        </ul>
+        <p>For my dissertation, I am building a system that learns qualitative science knowledge by reading and visually interpreting multimodal instructional analogies.
+        <p>My advisor is <a href="http://www.mccormick.northwestern.edu/research-faculty/directory/profiles/forbus-ken.html" target="_blank">Ken Forbus</a> and my research is supported by the <a href="http://www.spatiallearning.org/" target="_blank">Spatial Intelligence and Learning Center</a>, a cross-institutional NSF science of learning center.</p>
+		</div>
+    </div>
+    
+     <!-- papers !-->
+    <div class="body-container" id="papers">
+		<div class="body-header" align="right"><a href="https://scholar.google.com/citations?user=eeDcIwgAAAAJ&hl=en" target="_blank">Google Scholar</a></div>
+        <div class="body-header">Refereed Conference and Journal Papers 
+			<!-- <span class="body-text-right"><a href="https://scholar.google.com/citations?user=eeDcIwgAAAAJ&hl=en">Google Scholar Profile</a></span> !-->
+		</div>
+        <div class="body-text">
+			<p><b>Chang, M.D.</b>, Forbus, K.D. (2014). <a href="http://www.qrg.northwestern.edu/papers/Files/QRG_Dist_Files/QRG_2014/Chang-Forbus-AI-Magazine.pdf" target="_blank">Using Analogy to Cluster Hand-Drawn Sketches for Sketch-Based Educational Software</a>. <i>AI Magazine</i>. 35(1), 76-84.
+			<p><b>Chang, M.D.</b>, Wetzel, J. W. and Forbus, K. D. (2014). Spatial Reasoning in Comparative Analyses of Physics Diagrams. <i>In proceedings of the 2014 International Conference on Spatial Cognition.</i> Bremen, Germany.</p>
+			<p><b>Chang, M.D.</b>, Forbus, K.D. (2013). 
+			<a href="http://www.qrg.northwestern.edu/papers/Files/QRG_Dist_Files/QRG_2013/Chang-Forbus-clustering.pdf" target="_blank">
+			Clustering Hand-Drawn Sketches via Analogical Generalization.</a>
+			 <i>In proceedings of the 25th Annual Conference on Innovative Applications of Artificial Intelligence (IAAI).</i> Bellevue, WA.
+            <p><b>Chang, M.D.</b>, Forbus, K.D. (2012). 
+            <a href="http://www.qrg.northwestern.edu/papers/Files/QRG_Dist_Files/QRG_2012/Chang-Forbus-IAAI-2012_REVISED_FINAL.pdf" target="_blank">Using Quantitative Information to Improve Analogical Matching Between Sketches</a>. <i>In proceedings of the 24th Annual Conference on Innovative Applications of Artificial Intelligence (IAAI)</i>. Toronto, Canada.
+            <p>Benjamin, C., Lieberman, D.A., <b>Chang, M.</b>, Ofen, N., Gabrieli, J.D.E. &amp; Gaab, N. (2010). The influence of rest period instructions on the default mode network. <i>Frontiers in Human Neuroscience</i>. 4, 218.
+            <p>Raschle, N.M., <b>Chang, M.</b>, &amp; Gaab, N. (2010). Structural brain alterations associated with dyslexia predate reading onset. <i>Neuroimage</i>. 57(3), 742-9.
+            <p>Raschle, N.M., Lee, M., Buechler, R., Christodoulou, J.A., <b>Chang, M.</b>, Vakil, M., Stering, P.L., &amp; Gaab, N. (2009). 
+            <a href="http://www.jove.com/index/details.stp?id=1309" target="_blank">Making MR Imaging Child's Play - Pediatric Neuroimaging Protocol, Guidelines and Procedure.</a><i> JoVE</i>. 29.
+            <p>Fein, G., <b>Chang, M.</b> (2008). Smaller ERN Amplitudes During the BART are Associated with a Greater Family History Density of Alcohol Problems in Treatment-Naive Alcoholics. <i>Drug and Alcohol Dependence</i>. 92(1-3), 141-8.
+            <p>Fein, G., <b>Chang, M.</b> (2006). Visual P300s in Long-Term Abstinent Chronic Alcoholics. <i>Alcohol: Clinical and Experimental Research</i>. 30(12), 2000-7.
+        </div>
+        <br>
+		<div class="body-header">Workshop & Symposium Papers</div>
+		<div class="body-text">
+			<p><b>Chang, M.D.</b> and Forbus, K.D. (2015).
+			<a href="http://www.qrg.northwestern.edu/papers/Files/QRG_Dist_Files/QRG_2015/Chang-Forbus-QR15.pdf" target="_blank">
+			Towards Interpretation Strategies for Multimodal Instructional Analogies</a>. <i>In proceedings of the 28th International Workshop on Qualitative Reasoning</i>. Minneapolis, MN
+			<p><b>Chang, M.D.</b>, Wetzel, J. and Forbus, K. D. (2011). 
+            <a href="http://www.qrg.northwestern.edu/papers/Files/QRG_Dist_Files/QRG_2011/Chang-QR-2011-REVISION-FINAL.pdf" target="_blank">
+            Qualitative and Quantitative Reasoning over Physics Textbook Diagrams</a>. <i>In proceedings of the 25th International Workshop on Qualitative Reasoning</i>. Barcelona, Spain.
+            <p>Yin, P., <b>Chang, M.D.</b> and Forbus, K. (2010). 
+            <a href="http://www.qrg.northwestern.edu/papers/Files/QRG_Dist_Files/QRG_2010/QR2010_Yin_Final.pdf" target="_blank">Sketch-based Spatial Reasoning in Geologic Interpretation</a>. <i>In Proceedings of the 24th International Workshop on Qualitative Reasoning</i>. Portland, OR.
+        </div>
+		<br>
+        <div class="body-header">Refereed Abstracts, Tutorials & Other Presentations</div>
+        <div class="body-text">
+            <p><b>Chang, M.D.</b> (2014). 
+			<a href="http://www.qrg.northwestern.edu/papers/Files/QRG_Dist_Files/QRG_2014/Chang-AAAI14.pdf" target="_blank">
+			Analogy Tutor: A Tutoring System for Promoting Conceptual Learning via Comparison.</a> <i>Doctoral Consortium, Twenty-Eighth AAAI Conference on Artificial Intelligence</i>, Quebec City, Quebec, Canada.</p>
+			<p>Miller, B.W., Cromley, J.G., Newcombe, N., <b>Chang, M.D.</b>, Forbus, K.D. (2014). Using CogSketch to Support Student Science Learning Through Sketching with Automatic Feedback. <i>Presented at the 2014 annual meeting of the American Educational Research Association.</i> Retrieved July 2014, from the AERA Online Paper Repository (<a href="http://www.aera.net/repository" target="_blank">http://www.aera.net/repository</a>).</p>
+			<p>Garnier, B., Ormand, C.J., <b>Chang, M.D.</b>, Matlen, B., Tikoff, B., Shipley, T.F., Forbus, K.D. (2014). Testing CogSketch Geoscience Worksheets as an Effective Spatial Learning Tool in Introductory Geoscience Courses. <i>Accepted as Oral Presentation at the annual meeting of the Geological Society of America.</i> Vancouver, BC.
+			<p>Forbus, K.D., <b>Chang, M.D.</b>, and Lovett, A. (2014). CogSketch Tutorial. <i>Tutorial presented at the 2014 International Conference on Spatial Cognition.</i> Bremen, Germany.
+			<p><b>Chang, M.D.</b>, Forbus, K.D., Usher, J., and Garnier, B. (2013). Sketch Worksheets: a sketch-based educational software system built within CogSketch. <i>Accepted as Oral Presentation at the annual meeting of the Geological Society of America.</i> Denver, CO.
+			<p>Garnier, B., Ormand, C.J., <b>Chang, M.D.</b>, Tikoff, B., Shipley, T.F., Forbus, K.D. (2013). Using Sketching Software with a Virtual Tutor to Increase Sketching and Spatial Skill Development in a Classroom Environment. <i>Accepted as Oral Presentation at the annual meeting of the Geological Society of America.</i> Denver, CO.
+			<p><b>Chang, M.D.</b> (2011). Sketch Understanding for Education.  <i>Oral Presentation at Temple University</i>, October, 2011, Philadelphia.
+			<p>Wetzel, J.W. & <b>Chang, M.D.</b> (2011). CogSketch: the Workshop. <i>Workshop presented at the Inter Science of Learning Center Student and Post-Doc Conference (iSLC)</i> 2011, Washington, D.C.
+
+		</div>
+    </div>
+	
+	<!-- new updates section !-->
+    <div class="body-container" id="updates">
+			<a class="twitter-timeline"  
+				href="https://twitter.com/mdeloschang" data-widget-id="525379217848926209">Tweets by @mdeloschang</a>
+            <script>
+			!function(d,s,id) {
+					var js,fjs=d.getElementsByTagName(s)[0],
+					p=/^http:/.test(d.location)?'http':'https';
+					if(!d.getElementById(id)) {
+						js=d.createElement(s);
+						js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+						fjs.parentNode.insertBefore(js,fjs);
+						}
+					}
+			(document,"script","twitter-wjs");
+			</script>
+    </div>
+	<div class="body-container" id="updates-blocked">
+		<div class="body-text">
+			<p><b>Note:</b> If you don't see my twitter feed, it may have been blocked by a browser extension (e.g. AdBlock, Disconnect).</p>
+			<p>You can either disable the blocking extension(s) for this page or 
+			<a href="https://twitter.com/mdeloschang" target="_blank">head over to twitter to view my updates directly</a>.</p>
+		</div>
+	</div>
+    
+     <!-- connect !-->
+    <div class="body-container" id="connect">
+        <div class="body-header">How to contact me</div>
+        <div class="body-text">
+            <p>maria.chang at u.northwestern.edu
+            <p>If you know me, let's connect on <a href="http://www.linkedin.com/in/mariadchang" target="_blank">LinkedIn</a>.
+            <!-- <p><a href="http://twitter.com/mdelachang">I tweet sometimes.</a> !-->
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+</body>
+
+</html>
