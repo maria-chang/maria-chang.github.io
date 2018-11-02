@@ -9,7 +9,7 @@ I'm a [Research Staff Member](https://researcher.watson.ibm.com/researcher/view.
 knowledge representation, reasoning systems that can learn, AI in education, cognitive neuroscience.  See my papers on [Google Scholar](https://scholar.google.com/citations?user=1xQr1U8AAAAJ&hl=en&oi=ao).
 
 ### Selected Presentations
-*Characterizing the Reasoning Requirements for Complex Question Answering*. R2K workshop at KR 2018.  Maria Chang, Ryan Musa, Xiaoyan Wang, Achille Fokoue, Nicholas Mattei, Pavan Kapanipathi, Bassem Makni, Kartik Talamadupula, Michael Witbrock. [slides](assets/KR R2K workshop 2018.pdf)
+*Characterizing the Reasoning Requirements for Complex Question Answering*. R2K workshop at KR 2018.  Maria Chang, Ryan Musa, Xiaoyan Wang, Achille Fokoue, Nicholas Mattei, Pavan Kapanipathi, Bassem Makni, Kartik Talamadupula, Michael Witbrock. [slides](assets/KR%20R2K%20workshop%202018.pdf)
 
 *Dialogue-based tutoring at scale: Design and Challenges.*  ICLS 2018.  Maria Chang, Matthew Ventura, Jae-wook Ahn, Peter Foltz, Tengfei Ma, Tejas I. Dhamecha, Smit Marvaniya, Patrick Watson, Cassius D’helon, Amy Wetzel, Andy Packard Haas, Kaitlyn Banaszynski, John Behrens, Gailene Nelson, Sharad C. Sundararajan, Ravi Tejwani, Shazia Afzal, Nirmal Mukhi.  [slides](assets/WDBT%20ICLS%202018.pdf)
 
